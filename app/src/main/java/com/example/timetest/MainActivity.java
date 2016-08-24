@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -45,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
 
                 if (mDay == 0 && mHour == 0 && mMin == 0 && mSecond == 0) {
                     countDown.setVisibility(View.GONE);
-                    Toast.makeText(MainActivity.this, "时间倒计完毕", Toast.LENGTH_SHORT).show();
                 }
             }
         }
