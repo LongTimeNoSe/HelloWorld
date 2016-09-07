@@ -156,6 +156,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, NotificationActivity.class));
     }
 
+    public void camera(View view) {
+        startActivity(new Intent(MainActivity.this, CameraActivity.class));
+    }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

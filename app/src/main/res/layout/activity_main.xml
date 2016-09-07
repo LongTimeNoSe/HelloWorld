@@ -154,5 +154,12 @@
         android:onClick="notification"
         android:text="Notification" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="camera"
+        android:text="相机功能" />
+
 
 </LinearLayout>
