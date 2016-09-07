@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/countdown_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/countdown_layout"
+    android:orientation="vertical"
     tools:context="com.example.timetest.MainActivity">
 
     <RelativeLayout
@@ -12,7 +13,7 @@
         android:layout_height="40.0dip"
         android:layout_marginLeft="10.0dip"
         android:layout_marginRight="10.0dip"
-        android:gravity="center" >
+        android:gravity="center">
 
         <ImageView
             android:id="@+id/describe_iv"
@@ -57,7 +58,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/daojishi_rl"
-        android:gravity="center_horizontal" >
+        android:gravity="center_horizontal">
 
         <TextView
             android:id="@+id/hours_tv"
@@ -113,4 +114,45 @@
             android:text="59"
             android:textSize="20sp" />
     </RelativeLayout>
-</RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="next"
+        android:text="下一步" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
+
+    <EditText
+        android:id="@+id/paw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="login"
+        android:text="Login" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="dataSave"
+        android:text="数据存储" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="notification"
+        android:text="Notification" />
+
+
+</LinearLayout>
